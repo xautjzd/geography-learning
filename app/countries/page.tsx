@@ -46,7 +46,7 @@ export default function CountriesPage() {
                         : "border-[#1a2a40] opacity-60 hover:opacity-80"
                     }`}
                   >
-                    <div className="h-24 overflow-hidden">
+                    <div className="h-24 overflow-hidden bg-gradient-to-b from-[#0d1a2d] to-[#0a0f1a]">
                       <img
                         src={country.coverImage}
                         alt={country.name}

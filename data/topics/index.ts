@@ -5,7 +5,7 @@ export const topics: TopicData[] = [
     slug: "silk-road",
     title: "丝绸之路",
     subtitle: "连接欧亚大陆的贸易与文明走廊",
-    coverImage: "https://images.unsplash.com/photo-1609766857716-be8cffc6a879?w=1200&q=80",
+    coverImage: "https://images.unsplash.com/photo-1763144967763-2a8a98cb8431?w=1200&q=80",
     summary: "丝绸之路不是一条路，而是一张网络。从长安到罗马，跨越7000公里的沙漠、草原和山脉，这条通道在一千五百年间传递了丝绸、香料、宗教和瘟疫，也传递了人类文明最重要的创新思想。",
     period: "公元前2世纪 — 15世纪",
     geographicScope: "中国、中亚、中东、欧洲",

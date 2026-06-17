@@ -41,7 +41,7 @@ export default async function TopicPage({
   return (
     <article className="min-h-screen pt-[60px]">
       {/* Hero */}
-      <div className="relative h-[60vh] overflow-hidden">
+      <div className="relative h-[60vh] overflow-hidden bg-gradient-to-b from-[#0d1a2d] to-[#0a0f1a]">
         <img
           src={topic.coverImage}
           alt={topic.title}

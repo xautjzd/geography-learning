@@ -1,12 +1,13 @@
 "use client";
 
-import { useState, useCallback, lazy, Suspense } from "react";
+import { useState, useCallback, Suspense } from "react";
+import dynamic from "next/dynamic";
 import { CountryData } from "@/lib/types";
 import { countries } from "@/data/countries";
 import CountrySidebar from "@/components/CountrySidebar";
 import Link from "next/link";
 
-const WorldMap = lazy(() => import("@/components/WorldMap"));
+const WorldMap = dynamic(() => import("@/components/WorldMap"), { ssr: false });
 
 export default function HomePage() {
   const [selectedCountry, setSelectedCountry] = useState<CountryData | null>(null);

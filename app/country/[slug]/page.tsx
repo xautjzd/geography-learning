@@ -61,7 +61,7 @@ export default async function CountryPage({
   return (
     <article className="min-h-screen pt-[60px]">
       {/* Hero */}
-      <div className="relative h-[55vh] overflow-hidden">
+      <div className="relative h-[55vh] overflow-hidden bg-gradient-to-b from-[#0d1a2d] to-[#0a0f1a]">
         <img
           src={country.coverImage}
           alt={country.name}
@@ -152,7 +152,7 @@ export default async function CountryPage({
                   href={`/topic/${topic.slug}`}
                   className="group relative overflow-hidden rounded-xl border border-[#1e3a5c] hover:border-amber-400/40 transition-colors"
                 >
-                  <div className="h-32 overflow-hidden">
+                  <div className="h-32 overflow-hidden bg-gradient-to-b from-[#0d1a2d] to-[#0a0f1a]">
                     <img
                       src={topic.coverImage}
                       alt={topic.title}

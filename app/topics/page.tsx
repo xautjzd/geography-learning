@@ -25,7 +25,7 @@ export default function TopicsPage() {
               href={`/topic/${topic.slug}`}
               className="group block rounded-2xl overflow-hidden border border-[#1e3a5c] hover:border-amber-400/40 transition-all hover:shadow-lg hover:shadow-amber-400/5"
             >
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-48 overflow-hidden bg-gradient-to-b from-[#0d1a2d] to-[#0a0f1a]">
                 <img
                   src={topic.coverImage}
                   alt={topic.title}
