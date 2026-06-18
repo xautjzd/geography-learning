@@ -3,12 +3,18 @@ export interface ImpactSection {
   content: string;
 }
 
+export interface KeyLandmark {
+  name: string;
+  detail?: string;
+}
+
 export interface CountryData {
   slug: string;
   name: string;
   nameEn: string;
   capital: string;
   region: string;
+  subRegion?: string;
   coordinates: [number, number]; // [longitude, latitude]
   coverImage: string;
   summary: string;
@@ -26,6 +32,25 @@ export interface CountryData {
     gdp: string;
     terrain: string;
     climate: string;
+  };
+  keyLandmarks?: {
+    mountains?: KeyLandmark[];
+    rivers?: KeyLandmark[];
+    lakes?: KeyLandmark[];
+    plains?: KeyLandmark[];
+    deserts?: KeyLandmark[];
+  };
+  naturalResources?: {
+    energy?: string[];
+    minerals?: string[];
+    biological?: string[];
+    water?: string;
+  };
+  geopolitics?: {
+    neighbors: string[];
+    seaNeighbors?: string[];
+    strategicPosition: string;
+    borderDisputes?: string;
   };
   relatedTopics: string[];
   hasContent: boolean;

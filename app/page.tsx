@@ -4,6 +4,7 @@ import { useState, useCallback, Suspense } from "react";
 import dynamic from "next/dynamic";
 import { CountryData } from "@/lib/types";
 import { countries } from "@/data/countries";
+import { topics } from "@/data/topics";
 import CountrySidebar from "@/components/CountrySidebar";
 import Link from "next/link";
 
@@ -37,7 +38,7 @@ export default function HomePage() {
       <div className="absolute bottom-8 left-6 z-10 flex flex-col gap-2 pointer-events-none">
         <div className="flex items-center gap-2 text-xs text-[#6b8cba]">
           <span className="w-3 h-3 rounded-sm bg-[#1e4976] inline-block" />
-          <span>已收录国家</span>
+          <span>已收录地区</span>
         </div>
         <div className="flex items-center gap-2 text-xs text-[#6b8cba]">
           <span className="w-3 h-3 rounded-sm bg-[#c9a84c] inline-block" />
@@ -50,19 +51,15 @@ export default function HomePage() {
       </div>
 
       {/* Topic shortcut */}
-      <div className="absolute bottom-8 right-6 z-10 flex flex-col gap-2">
+      <div className="absolute bottom-8 right-6 z-10 flex flex-col gap-2 max-h-[calc(100vh-120px)] overflow-y-auto">
         <p className="text-xs text-[#4a6fa5] mb-1">精选专题</p>
-        {[
-          { slug: "silk-road", label: "丝绸之路" },
-          { slug: "mongol-empire", label: "蒙古帝国" },
-          { slug: "nile-basin", label: "尼罗河流域" },
-        ].map((t) => (
+        {topics.map((t) => (
           <Link
             key={t.slug}
             href={`/topic/${t.slug}`}
-            className="text-xs px-3 py-1.5 bg-[#0d1a2d] border border-[#1e3a5c] rounded text-[#6b8cba] hover:text-amber-400 hover:border-amber-400/30 transition-colors"
+            className="text-xs px-3 py-1.5 bg-[#0d1a2d] border border-[#1e3a5c] rounded text-[#6b8cba] hover:text-amber-400 hover:border-amber-400/30 transition-colors whitespace-nowrap"
           >
-            {t.label} →
+            {t.title.split("：")[0]} →
           </Link>
         ))}
       </div>

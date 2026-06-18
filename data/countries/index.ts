@@ -8,10 +8,11 @@ export const countries: CountryData[] = [
     nameEn: "China",
     capital: "北京",
     region: "亚洲",
+    subRegion: "东亚",
     coordinates: [104.1954, 35.8617],
     coverImage: "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=1200&q=80",
     summary: "中国的地理格局——西高东低的三级阶梯，决定了文明在黄河、长江流域诞生，也决定了帝国向内陆扩张的边界与方向。",
-    geography: "中国地势西高东低，形成三级阶梯：青藏高原平均海拔4000米以上，是「世界屋脊」；第二阶梯为云贵高原、内蒙古高原和黄土高原；第三阶梯为东部平原和丘陵。",
+    geography: "中国面积约960万平方公里，居世界第三，陆地边界长约2.2万公里，与14国接壤，海岸线约1.8万公里。地势西高东低，呈三级阶梯下降：第一阶梯青藏高原平均海拔4000米以上，是「世界屋脊」和亚洲诸大河（长江、黄河、湄公河、雅鲁藏布江）的发源地；第二阶梯（海拔1000-2000米）由云贵高原、内蒙古高原、黄土高原与塔里木、准噶尔、四川等大型盆地组成；第三阶梯（海拔500米以下）为东北平原、华北平原、长江中下游平原及东南丘陵。气候横跨热带季风、亚热带季风、温带季风、温带大陆性与高原高寒五大类型，秦岭-淮河一线既是南北气候分界，也是文化与经济的结构性断层。",
     impactChain: {
       terrain: {
         title: "地形：三级阶梯与文明走廊",
@@ -27,7 +28,7 @@ export const countries: CountryData[] = [
       },
       economy: {
         title: "经济：东部沿海的先天优势",
-        content: "三级阶梯使江河自西向东流入太平洋，形成天然航运网络。长三角和珠三角位于大陆架最宽阔处，拥有优质深水港湾，加之背靠庞大内陆市场，成为改革开放后最先崛起的经济核心区。西部高原多矿产资源但运输成本高昂，东西部经济差距在很大程度上是地理差距的经济投影。",
+        content: "三级阶梯使江河自西向东流入太平洋，形成天然航运网络。长三角和珠三角位于大陆架最宽阔处，拥有优质深水港湾，加之背靠庞大内陆市场，成为改革开放后最先崛起的经济核心区——仅广东、江苏、浙江、上海四省市便贡献全国约三分之一的GDP。西部高原多矿产资源但远离海洋、运输成本高昂，东西部人均GDP差距长期在2-3倍之间，本质上是「到海岸线距离」这一地理变量的经济投影。这也是「西部大开发」「一带一路」试图用陆路通道（中欧班列、中巴经济走廊）改写地理约束的深层动因——若内陆能低成本通达海洋，胡焕庸线以西的资源禀赋才可能转化为经济优势。",
       },
       population: {
         title: "人口：胡焕庸线的地理密码",
@@ -90,18 +91,19 @@ export const countries: CountryData[] = [
     nameEn: "Japan",
     capital: "东京",
     region: "亚洲",
+    subRegion: "东亚",
     coordinates: [138.2529, 36.2048],
     coverImage: "https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=1200&q=80",
     summary: "四岛弧形列岛的地理宿命：资源匮乏造就精工文化，地震火山塑造危机意识，海峡天堑既是屏障也是扩张野心的起点。",
-    geography: "日本由本州、九州、四国、北海道四大岛及众多小岛组成，位于环太平洋火山地震带，国土山地占70%以上，平原狭小。",
+    geography: "日本面积约37.8万平方公里，由本州、北海道、九州、四国四大岛及约1.4万个小岛组成，呈弧形列岛纵贯约3000公里，跨越亚寒带至亚热带。地处亚欧板块、太平洋板块、菲律宾海板块交汇的环太平洋火山地震带，全境有111座活火山，约占全球的7%，每年有感地震逾千次。山地与丘陵占国土约73%，平原仅约13%且零散分布于沿海，最大的关东平原约1.7万平方公里。本州中部的「中央构造线」与糸鱼川-静冈构造线（フォッサマグナ）将列岛在地质上一分为二。河流短促湍急，多优良深水港湾，海岸线长达约3.4万公里。",
     impactChain: {
       terrain: {
         title: "地形：山国与平原的稀缺",
-        content: "日本国土70%以上为山地，可耕平原极为稀缺，关东平原是最大的农业区，也因此成为历史上政治中心的首选。山地将列岛切割成众多小盆地，形成相对独立的领地单元，这是日本封建制度（幕藩体制）长期存续的地理基础——地形天然支持分权，而非中央集权。",
+        content: "日本国土逾70%为山地，可耕地仅占约12%，平原极为稀缺。关东平原是最大的农业与人口集聚区，也因此成为历史上政治中心的首选——从镰仓、江户到今日的东京，权力始终围绕这片平原。山地将列岛切割成众多互相隔绝的小盆地（如京都盆地、甲府盆地），形成相对独立的领地单元，这是日本封建制度（幕藩体制）下两百余个「藩」长期割据存续的地理基础——地形天然支持分权而非中央集权，直到明治维新「废藩置县」才以行政力量强行打破这种地理碎片化。耕地稀缺也塑造了精耕细作的水稻文化与「石高制」这一以稻米产量衡量领地实力的独特政治经济体系。",
       },
       climate: {
         title: "气候：海洋性气候与四季分明",
-        content: "黑潮暖流调节了日本的气候，使其比同纬度大陆更为温和湿润。充沛降雨支撑了高强度水稻农业，但也意味着台风季节的反复冲击。对自然力量的敬畏深植于神道文化，也解释了日本社会对自然灾害的高度组织化应对能力。",
+        content: "黑潮（日本暖流）与亲潮（千岛寒流）在本州东北外海交汇，既调节气候使日本比同纬度大陆更温和湿润，也形成了世界三大渔场之一的三陆冲渔场。来自太平洋的夏季东南季风带来充沛降雨（多数地区年降水1000-2500毫米），支撑了高强度水稻农业，但也意味着每年6-10月台风季的反复冲击。日本海一侧冬季受西北季风越山后的「雪云」影响，成为世界级豪雪带（如新潟、北陆年积雪可达数米）。对地震、台风、海啸等自然力量的敬畏深植于神道「八百万神」的泛灵信仰，也解释了日本社会对自然灾害异常高度组织化的应对能力——从建筑抗震标准到全民防灾演练。",
       },
       history: {
         title: "历史：海峡即护城河",
@@ -109,7 +111,7 @@ export const countries: CountryData[] = [
       },
       economy: {
         title: "经济：资源匮乏与精工逻辑",
-        content: "几乎没有铁矿、石油和大规模农业用地，迫使日本在工业化时代极度依赖进口原料和出口制成品。资源匮乏催生了精密制造文化——当每吨钢铁都来之不易，减少浪费、提升良品率就成为生存策略，丰田生产方式（TPS）的哲学根源在此。",
+        content: "几乎没有铁矿、石油和大规模农业用地，能源自给率长期不足15%，迫使日本在工业化时代形成「进口原料—加工增值—出口制成品」的贸易立国模式。资源匮乏催生了精密制造文化——当每吨钢铁、每滴石油都依赖进口，减少浪费、提升良品率就成为生存策略，丰田生产方式（TPS）「精益（lean）」与「零库存（JIT）」的哲学根源正在于此。能源命脉系于海上进口，使日本对马六甲—南海航线和中东局势高度敏感，这也是其战后追求海运护航能力与能源来源多元化的根本动因；1973年石油危机的冲击更直接推动了日本从重化工业向节能、电子、汽车等高附加值产业的转型。",
       },
       population: {
         title: "人口：太平洋沿岸的城市带",
@@ -241,7 +243,7 @@ export const countries: CountryData[] = [
     coordinates: [105.3188, 61.524],
     coverImage: "https://images.unsplash.com/photo-1513326738677-b964603b136d?w=1200&q=80",
     summary: "世界最大国家的地理困境：幅员万里却找不到一个好港口，严寒是天然屏障也是最沉重的发展代价，无尽平原让边界永远是悬念。",
-    geography: "俄罗斯横跨欧亚大陆，面积1709万平方公里，大部分国土为西伯利亚平原和泰加林带，北临北冰洋，大部分海岸线全年封冻。",
+    geography: "俄罗斯面积约1709万平方公里，是世界最大国家，横跨欧亚大陆、东西延伸约9000公里、跨越11个时区。地形以乌拉尔山为界分为两大部分：以西为东欧平原（俄罗斯文明核心区），以东为广袤的西伯利亚——西西伯利亚平原、中西伯利亚高原与远东山地依次排列，叶尼塞河、勒拿河等大河自南向北注入北冰洋。植被自北向南呈带状更替：北冰洋沿岸苔原、中部全球最大的泰加针叶林带、南部草原。约65%的国土为永久冻土。海岸线虽长约3.8万公里，但绝大部分濒临封冻的北冰洋，缺乏全年可用的不冻深水良港，这一「有海无港」的结构性困境贯穿其数百年地缘战略。",
     impactChain: {
       terrain: {
         title: "地形：无边界的平原与战略焦虑",
@@ -312,10 +314,11 @@ export const countries: CountryData[] = [
     nameEn: "India",
     capital: "新德里",
     region: "亚洲",
+    subRegion: "南亚",
     coordinates: [78.9629, 20.5937],
     coverImage: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1200&q=80",
     summary: "喜马拉雅山脉是印度文明的子宫：北方屏障造就了独立发展的空间，三角形半岛伸入印度洋，使印度成为海洋贸易的天然枢纽。",
-    geography: "印度北部为喜马拉雅山脉，中部为恒河-印度河平原，南部为德干高原，东西两侧分别被孟加拉湾和阿拉伯海包围，形成独立的地理单元。",
+    geography: "印度面积约328.7万平方公里，居世界第七，是南亚次大陆的主体。地形可分四大区：北部喜马拉雅山带（含8000米级高峰，构成天然北墙）；中部恒河-印度河冲积平原（世界最大冲积平原之一，土壤肥沃、人口稠密）；南部德干高原（古老的玄武岩地盾，被东、西高止山脉夹峙）；以及西北的塔尔沙漠与西部的卡奇盐沼。半岛呈倒三角形伸入印度洋，东临孟加拉湾、西濒阿拉伯海，海岸线约7500公里，扼守印度洋东西航道的中央位置。喜马拉雅与海洋的双重屏障使次大陆成为一个相对独立的地理单元，孕育了自成体系的文明。",
     impactChain: {
       terrain: {
         title: "地形：山脉即文明边界",
@@ -331,7 +334,7 @@ export const countries: CountryData[] = [
       },
       economy: {
         title: "经济：季风农业与软件业的跨越",
-        content: "恒河平原是世界上最肥沃的农业区之一，支撑了印度作为古代世界最富裕经济体之一的地位（据估计，17世纪印度占世界GDP的25%）。殖民地时期的去工业化打断了这一进程。独立后印度跳过制造业，直接进入服务业和IT产业——班加罗尔的科技崛起与地理关系不大，但与英语遗产、大学教育体系和廉价人力资本密切相关。",
+        content: "恒河平原是世界上最肥沃的农业区之一，支撑了印度作为古代世界最富裕经济体之一的地位（据麦迪森估算，1700年前后印度约占世界GDP的25%，与当时的中国并列）。殖民地时期的去工业化（英国棉纺织品倾销摧毁了印度手工业）打断了这一进程，到1947年独立时印度GDP占比已跌至约4%。独立后印度未能复制东亚的劳动密集型制造业起飞，反而「跨越式」直接进入服务业和IT产业——班加罗尔、海得拉巴的科技崛起与地理资源关系不大，更得益于英语遗产、理工学院（IIT）精英教育体系、与欧美的时差互补以及廉价的高素质人力资本。但制造业薄弱（仅占GDP约15%）使数亿低技能劳动力难以充分就业，「人口红利能否兑现」成为印度经济的核心悬念，「印度制造（Make in India）」正试图补上这一短板。",
       },
       population: {
         title: "人口：即将超越中国",
@@ -393,6 +396,7 @@ export const countries: CountryData[] = [
     nameEn: "Mongolia",
     capital: "乌兰巴托",
     region: "亚洲",
+    subRegion: "东亚",
     coordinates: [103.8467, 46.8625],
     coverImage: "https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=1200&q=80",
     summary: "草原帝国的地理逻辑：开阔无垠的草原孕育了最强大的骑兵，也注定了帝国无法转型为定居文明。",
@@ -465,6 +469,7 @@ export const countries: CountryData[] = [
     nameEn: "Indonesia",
     capital: "雅加达",
     region: "亚洲",
+    subRegion: "东南亚",
     coordinates: [113.9213, -0.7893],
     coverImage: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1200&q=80",
     summary: "一万七千座岛屿的群岛国家，坐落于环太平洋火山带，香料贸易曾让欧洲列强为之倾倒。",
@@ -535,6 +540,7 @@ export const countries: CountryData[] = [
     nameEn: "Malaysia",
     capital: "吉隆坡",
     region: "亚洲",
+    subRegion: "东南亚",
     coordinates: [109.6975, 4.2105],
     coverImage: "https://images.unsplash.com/photo-1508062878650-88b52897f298?w=1200&q=80",
     summary: "马六甲海峡是世界最繁忙的航运通道，马来西亚的历史就是一部围绕这条海峡展开的贸易与征服史。",
@@ -602,6 +608,7 @@ export const countries: CountryData[] = [
     nameEn: "South Korea",
     capital: "首尔",
     region: "亚洲",
+    subRegion: "东亚",
     coordinates: [127.7669, 35.9078],
     coverImage: "https://images.unsplash.com/photo-1517154421773-0529f29ea451?w=1200&q=80",
     summary: "朝鲜半岛是大陆与海洋的交汇处，地缘夹缝中的韩国以「汉江奇迹」书写了工业化时代最快速的经济腾飞之一。",
@@ -671,6 +678,7 @@ export const countries: CountryData[] = [
     nameEn: "Thailand",
     capital: "曼谷",
     region: "亚洲",
+    subRegion: "东南亚",
     coordinates: [100.9925, 15.87],
     coverImage: "https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?w=1200&q=80",
     summary: "湄公河冲积平原是东南亚最肥沃的水稻产区，泰国是东南亚唯一未被殖民的国家，地理位置的缓冲功能功不可没。",
@@ -739,6 +747,7 @@ export const countries: CountryData[] = [
     nameEn: "Philippines",
     capital: "马尼拉",
     region: "亚洲",
+    subRegion: "东南亚",
     coordinates: [121.774, 12.8797],
     coverImage: "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=1200&q=80",
     summary: "七千座岛屿散布在西太平洋，菲律宾是东亚与太平洋的门户，也是台风频率最高的国家之一。",
@@ -808,6 +817,7 @@ export const countries: CountryData[] = [
     nameEn: "Israel",
     capital: "耶路撒冷",
     region: "亚洲",
+    subRegion: "西亚",
     coordinates: [34.8516, 31.0461],
     coverImage: "https://images.unsplash.com/photo-1584017038896-d87f6ecfc598?w=1200&q=80",
     summary: "迦南地是三大洲的十字路口，三大宗教的圣地，这块弹丸之地的地缘价值远超其物理面积。",
@@ -877,6 +887,7 @@ export const countries: CountryData[] = [
     nameEn: "Iran",
     capital: "德黑兰",
     region: "亚洲",
+    subRegion: "西亚",
     coordinates: [53.688, 32.4279],
     coverImage: "https://images.unsplash.com/photo-1675244282772-f473df295aaf?w=1200&q=80",
     summary: "波斯高原是中亚的心脏，古代丝绸之路的必经之地，伊朗的地缘中心性使其成为历史上最多次被征服也最顽强复兴的文明。",
@@ -950,6 +961,7 @@ export const countries: CountryData[] = [
     nameEn: "Vietnam",
     capital: "河内",
     region: "亚洲",
+    subRegion: "东南亚",
     coordinates: [108.2772, 14.0583],
     coverImage: "https://images.unsplash.com/photo-1528127269322-539801943592?w=1200&q=80",
     summary: "S形狭长国土是越南的宿命，北有中国的千年影响，南有肥沃的湄公河三角洲，瘦长的身形使统一和防御都格外艰难。",
@@ -1019,6 +1031,7 @@ export const countries: CountryData[] = [
     nameEn: "Nepal",
     capital: "加德满都",
     region: "亚洲",
+    subRegion: "南亚",
     coordinates: [84.124, 28.3949],
     coverImage: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1200&q=80",
     summary: "世界屋脊上的夹缝小国，喜马拉雅山脉是其最大的保护屏障，也是其最沉重的发展枷锁。",
@@ -1164,7 +1177,7 @@ export const countries: CountryData[] = [
     coordinates: [-3.436, 55.3781],
     coverImage: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1200&q=80",
     summary: "岛国之利：英吉利海峡是最佳护城河，温暖洋流赋予宜人气候，工业革命的煤铁资源和海洋贸易的天然优势共同缔造了大英帝国。",
-    geography: "大不列颠岛与欧洲大陆隔英吉利海峡相望，最窄处仅34公里。北部苏格兰高地、中部山地、南部低地提供了多样地形。",
+    geography: "英国面积约24.4万平方公里，由大不列颠岛（英格兰、苏格兰、威尔士）、爱尔兰岛东北部（北爱尔兰）及众多小岛组成，与欧洲大陆隔英吉利海峡相望，最窄的多佛尔海峡仅约34公里。地势呈「西北高、东南低」：西北部为苏格兰高地、奔宁山脉、威尔士坎布里亚山等古老硬岩高地（本尼维斯山1345米为最高点），东南部为伦敦盆地与广阔的低平原野（优良农业与人口核心区）。河流短小但通航条件好，泰晤士河连接伦敦与北海。受北大西洋暖流（墨西哥湾流延伸）与西风带影响，气候温和湿润、四季无极端，海岸线极为曲折（长约1.2万公里），天然良港众多——岛国位置与航海条件共同奠定了海洋贸易与海权立国的基础。",
     impactChain: {
       terrain: {
         title: "地形：岛国的天然护城河",
@@ -1380,7 +1393,7 @@ export const countries: CountryData[] = [
     coordinates: [12.5674, 41.8719],
     coverImage: "https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?w=1200&q=80",
     summary: "靴形半岛伸入地中海，控制了古罗马帝国的地中海贸易命脉，亚平宁山脉分割了统一，使意大利直到1861年才成为现代国家。",
-    geography: "意大利半岛呈靴形伸入地中海，北部阿尔卑斯山与欧洲相接，亚平宁山脉纵贯南北，西西里岛是地中海最大岛屿。",
+    geography: "意大利面积约30.1万平方公里，主体是呈「长靴」形深入地中海的亚平宁半岛，外加西西里、撒丁两大岛屿。北部以阿尔卑斯山与法、瑞、奥、斯洛文尼亚为界（勃朗峰侧峰一带为最高），山脚下是全国最富庶、人口与工业最密集的波河平原（Pianura Padana，唯一的大型平原，波河自西向东注入亚得里亚海）。亚平宁山脉如脊柱纵贯整个半岛，使可耕平原零碎分布于沿海。地处非洲板块与欧亚板块碰撞带，火山与地震活跃——维苏威、埃特纳、斯特龙博利是欧洲仅有的活火山群。三面环地中海、海岸线长约7600公里，扼守地中海中央，自古便是连接东西地中海与南北欧的航运枢纽。",
     impactChain: {
       terrain: {
         title: "地形：靴形半岛的地中海支配",
@@ -1454,7 +1467,7 @@ export const countries: CountryData[] = [
     coordinates: [10.4515, 51.1657],
     coverImage: "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=1200&q=80",
     summary: "欧洲中心的地理宿命：莱茵河谷是工业化的引擎，缺乏天然边界使德国在两次世界大战中都面临两线作战的战略困境。",
-    geography: "德国北部为北德平原，中部为山地丘陵，南部为阿尔卑斯山前地，莱茵河、易北河、多瑙河在此汇聚，是欧洲中心交通枢纽。",
+    geography: "德国面积约35.7万平方公里，地处欧洲正中，地形自北向南呈三级抬升：北部为低平的北德平原（冰川作用形成，多湖泊与沙质土壤）；中部为山地丘陵与中等山脉（哈茨山、图林根林山、莱茵片岩山地）；南部为巴伐利亚高原及阿尔卑斯山前地，南缘的楚格峰（2962米）为全国最高点。莱茵河自南向北纵贯西部、注入北海，多瑙河自西向东横穿南部、流向黑海，易北河、威悉河、奥得河共同构成欧洲最密集的内河-运河航运网（经基尔运河沟通北海与波罗的海）。除南部阿尔卑斯山外几乎无天然边界，开阔的平原与河流走廊既是经济枢纽，也使德国在历史上长期面临东西两线的战略暴露。",
     impactChain: {
       terrain: {
         title: "地形：欧洲中心的地缘宿命",
@@ -1528,7 +1541,7 @@ export const countries: CountryData[] = [
     coordinates: [2.2137, 46.2276],
     coverImage: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&q=80",
     summary: "欧洲最完美的地理单元：六边形国土三面环山一面向海，塞纳河和卢瓦尔河流域是农业文明的摇篮，巴黎盆地是历代王权的天选之地。",
-    geography: "法国呈六边形，北临英吉利海峡，东部为阿尔卑斯山和孚日山脉，南部为比利牛斯山，西南有大西洋海岸，地理单元完整。",
+    geography: "法国面积约55万平方公里，是西欧面积最大的国家，国土轮廓近似六边形（法国人即以「l'Hexagone」自称）。三面环山或临海、地理单元高度完整：东南为阿尔卑斯山（勃朗峰4806米，西欧最高峰），东北为孚日山与莱茵河谷，南为比利牛斯山（与西班牙天然分界），西、西南为大西洋与比斯开湾海岸，南为地中海沿岸，仅东北平原向低地国家敞开（历史上的入侵通道）。内部以巴黎盆地为核心，塞纳河、卢瓦尔河、加龙河、罗讷河四大水系分别注入英吉利海峡、大西洋与地中海，平原与缓丘占国土大半，土壤肥沃、气候温和，是欧洲首屈一指的农业大国。",
     impactChain: {
       terrain: {
         title: "地形：六边形的地理完整性",
@@ -1604,7 +1617,7 @@ export const countries: CountryData[] = [
     coordinates: [-3.7492, 40.4637],
     coverImage: "https://images.unsplash.com/photo-1583422409516-2895a77efded?w=1200&q=80",
     summary: "伊比利亚高原是欧洲的盲端，直布罗陀是通往大西洋的锁钥，这个地理位置使西班牙错过了欧洲工业化，却率先开辟了大航海时代。",
-    geography: "伊比利亚半岛以中央高原梅塞塔为主体，被比利牛斯山与欧洲大陆隔绝，南端直布罗陀海峡连接地中海与大西洋。",
+    geography: "西班牙面积约50.6万平方公里，占伊比利亚半岛约85%，是欧洲平均海拔第二高的国家（仅次于瑞士）。地理核心是占据半岛中央的梅塞塔高原（Meseta Central，平均海拔约600-700米），被周边山脉环抱：北缘坎塔布连山脉、东北比利牛斯山（与法国天然分界、将半岛与欧陆隔绝）、南部内华达山脉（穆拉森峰3479米为半岛最高）。主要河流（杜罗河、塔霍河、瓜迪亚纳河）多自高原向西切穿、注入大西洋，唯埃布罗河东流入地中海。南端直布罗陀海峡最窄处仅约14公里，是地中海通往大西洋的唯一门户，扼守欧非两洲咽喉。气候差异极大：北部湿润海洋性、中部干燥大陆性、南部与地中海沿岸炎热半干旱。",
     impactChain: {
       terrain: {
         title: "地形：伊比利亚高原的孤立与大西洋的呼唤",
@@ -1960,7 +1973,7 @@ export const countries: CountryData[] = [
     coordinates: [-95.7129, 37.0902],
     coverImage: "https://images.unsplash.com/photo-1501466044931-62695aada8e9?w=1200&q=80",
     summary: "两洋之间的大陆强国：密西西比河水系是最廉价的内陆交通网，五大湖是工业化的水源与通道，两岸大洋是最宽阔的护城河。",
-    geography: "美国东部阿巴拉契亚山脉、中部大平原、西部落基山脉三条南北走向的地形带，密西西比河水系是世界最大内河航运系统之一。",
+    geography: "美国本土面积约963万平方公里（含阿拉斯加、夏威夷为全国总面积），自东向西呈三条南北走向的地形带：东部古老的阿巴拉契亚山脉与大西洋沿岸平原、中部辽阔平坦的内陆大平原（Great Plains，覆盖深厚黑土）、西部高峻的落基山脉与盆地高原，再到太平洋沿岸的海岸山脉。中央的密西西比河-密苏里河-俄亥俄河水系长约6000公里，与五大湖及伊利运河相连，构成世界规模最大的内河-湖泊航运网络，可低成本将中部农产品运抵新奥尔良出海。东西两侧分别濒临大西洋与太平洋，南北邻国（加拿大、墨西哥）实力远逊，形成「两洋护城河+弱邻」的罕见地缘安全格局。气候横跨热带到极地，类型几乎无所不包。",
     impactChain: {
       terrain: {
         title: "地形：大陆心脏地带的天然优势",
@@ -2040,7 +2053,7 @@ export const countries: CountryData[] = [
     coordinates: [-51.9253, -14.235],
     coverImage: "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=1200&q=80",
     summary: "亚马逊雨林是世界的氧气工厂，巴西的地理大小与其国力不相称，热带地形阻碍了工业化，却成为21世纪农业强国的底牌。",
-    geography: "亚马逊盆地占巴西近60%面积，是世界最大的热带雨林，巴西高原占据南部和东部，东南沿海有狭窄平原。",
+    geography: "巴西面积约851万平方公里，居世界第五、南美第一，约占南美洲面积的47%，与除智利、厄瓜多尔外的所有南美国家接壤。地形两大主体：北部为亚马逊盆地（占国土近60%，世界最大热带雨林，亚马逊河流量居全球之首）；中南部与东部为巴西高原（古老结晶地盾，平均海拔500-900米，是矿产与农牧业核心区）。东南沿海被陡峭的「大悬崖」（Grande Escarpa）与狭窄海岸平原分隔，使高原与海洋间缺乏宽阔过渡带，历史上制约了内陆开发与交通。海岸线长约7500公里却天然良港有限。绝大部分国土处于热带，仅南部进入亚热带，气候湿热的雨林环境长期成为工业化与人口深入内陆的地理障碍。",
     impactChain: {
       terrain: {
         title: "地形：亚马逊流域与高原之国",
@@ -2254,7 +2267,7 @@ export const countries: CountryData[] = [
     coordinates: [-102.5528, 23.6345],
     coverImage: "https://images.unsplash.com/photo-1518638150340-f706e86654de?w=1200&q=80",
     summary: "中美洲高原孕育了阿兹特克帝国，与美国漫长的边境线决定了其现代命运，玛雅文明在丛林中的消失至今是地理谜题。",
-    geography: "墨西哥高原占国土40%，东西两侧为马德雷山脉，南部为热带丛林，北部与美国接壤的边境线长达3145公里。",
+    geography: "墨西哥面积约196万平方公里，居世界第十三、拉美第三。地形主体是中央的墨西哥高原（Altiplano，海拔约1000-2000米，北低南高），两翼被东马德雷山脉与西马德雷山脉夹峙，向南在跨墨西哥火山带汇聚——奥里萨巴峰（5636米）等火山在此耸立，地处环太平洋地震带、火山地震频发。高原南端的中央谷地（含墨西哥城盆地，海拔约2240米）自阿兹特克时代起便是政治中心。北部为索诺拉沙漠等干旱高地，与美国接壤的边境线长约3145公里；南部尤卡坦半岛与恰帕斯为低平的热带丛林与石灰岩台地。东临墨西哥湾、西濒太平洋，南扼连接两洋的特万特佩克地峡，海岸线长约9300公里。",
     impactChain: {
       terrain: {
         title: "地形：高原文明与两洋之间",
@@ -2325,7 +2338,7 @@ export const countries: CountryData[] = [
     coordinates: [-96.8165, 56.1304],
     coverImage: "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?w=1200&q=80",
     summary: "世界第二大国家，却只有3800万人，极寒气候将人口锁定在南方狭带，北极航线的融化正在重塑其战略价值。",
-    geography: "加拿大拥有世界最长海岸线，60%国土为寒带气候，北部永久冻土层广布，大草原带是世界重要粮仓。",
+    geography: "加拿大面积约998万平方公里，居世界第二，拥有世界最长的海岸线（约20.2万公里）和最多的湖泊（全球淡水湖面积约一半在此）。地形自东向西：东部为古老低缓的阿巴拉契亚山与圣劳伦斯低地；中部是覆盖近半国土的加拿大地盾（Canadian Shield，坚硬结晶岩、薄土多湖，矿产丰富但不利农耕），向西过渡为中部大草原（Prairies，深厚黑土，世界级小麦产区）；西部为高峻的落基山脉与海岸山脉；北部则是北极群岛与广布的永久冻土。绝大部分国土处于寒带与亚寒带，约90%的人口因严寒而挤在距美加边境约160公里的狭长地带内，与温暖南方的美国形成鲜明的「人口贴边」格局。",
     impactChain: {
       terrain: {
         title: "地形：世界第二大国的稀疏分布",
@@ -2471,7 +2484,8 @@ export const countries: CountryData[] = [
     name: "沙特阿拉伯",
     nameEn: "Saudi Arabia",
     capital: "利雅得",
-    region: "中东",
+    region: "亚洲",
+    subRegion: "西亚",
     coordinates: [45.0792, 23.8859],
     coverImage: "https://images.unsplash.com/photo-1586724237569-f3d0c1dee8c6?w=1200&q=80",
     summary: "阿拉伯半岛的沙漠守护者，石油将这片贫瘠之地变为全球权力博弈的中心，麦加与麦地那赋予其无可替代的宗教权威。",
@@ -2535,7 +2549,8 @@ export const countries: CountryData[] = [
     name: "伊拉克",
     nameEn: "Iraq",
     capital: "巴格达",
-    region: "中东",
+    region: "亚洲",
+    subRegion: "西亚",
     coordinates: [43.6793, 33.2232],
     coverImage: "https://images.unsplash.com/photo-1709659583214-a6ba183e5779?w=1200&q=80",
     summary: "底格里斯河与幼发拉底河之间的美索不达米亚是人类最早的文明摇篮，今日伊拉克的战乱与这片土地的地缘价值密不可分。",
@@ -2609,7 +2624,7 @@ export const countries: CountryData[] = [
     coordinates: [133.7751, -25.2744],
     coverImage: "https://images.unsplash.com/photo-1529108190281-9a4f620bc2d8?w=1200&q=80",
     summary: "一块大陆的孤独进化：隔绝了6500万年的物种实验室，干旱内陆将人口挤向沿海，矿产与农业使其成为亚洲崛起最大的受益者之一。",
-    geography: "澳大利亚内陆为广阔沙漠（占国土70%），东部大分水岭将湿润沿海与干旱内陆隔开，北部热带草原，南部温带。",
+    geography: "澳大利亚面积约769万平方公里，居世界第六，是唯一独占一块大陆的国家，也是地球上最古老、最平坦、最干旱的有人定居大陆。地形可分三大区：西部为占国土近半的西澳高原（古老结晶地盾，矿产极丰）；中部为低平的大自流盆地（Great Artesian Basin，地下水资源是内陆畜牧业命脉，含艾尔湖等间歇性盐湖，地表最低点低于海平面）；东部为大分水岭（Great Dividing Range，纵贯东海岸，科修斯科山2228米为最高峰），它拦截太平洋水汽、将湿润狭窄的东南沿海与干旱内陆截然分开。约70%的国土为干旱或半干旱区，「红色中心」沙漠广布，迫使绝大多数人口与城市挤在东南、东部及西南沿海的湿润弧带。北部为热带草原与季风区，南部为温带。",
     impactChain: {
       terrain: {
         title: "地形：最古老大陆的贫瘠与丰饶",
@@ -2754,6 +2769,7 @@ export const countries: CountryData[] = [
     nameEn: "Turkey",
     capital: "安卡拉",
     region: "亚洲",
+    subRegion: "西亚",
     coordinates: [35.2433, 38.9637],
     coverImage: "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=1200&q=80",
     summary: "博斯普鲁斯海峡是地球上最贵的一条水道：连接黑海与地中海，分隔欧亚大陆，三千年来每一个控制两岸的帝国都成为世界霸主。",
@@ -2829,6 +2845,7 @@ export const countries: CountryData[] = [
     nameEn: "Pakistan",
     capital: "伊斯兰堡",
     region: "亚洲",
+    subRegion: "南亚",
     coordinates: [69.3451, 30.3753],
     coverImage: "https://images.unsplash.com/photo-1547234935-80c7145ec969?w=1200&q=80",
     summary: "开伯尔山口是历史上征服印度的唯一大门：亚历山大、帖木儿、莫卧儿帝国，所有入侵者都从这条山谷走过，而巴基斯坦恰好守着这扇门。",
@@ -3268,6 +3285,7 @@ export const countries: CountryData[] = [
     nameEn: "Singapore",
     capital: "新加坡",
     region: "亚洲",
+    subRegion: "东南亚",
     coordinates: [103.8198, 1.3521],
     coverImage: "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=1200&q=80",
     summary: "新加坡是地理决定论最戏剧性的反证，也是最有力的佐证——一个没有腹地、没有资源、没有淡水的岛屿，仅凭一个海峡的控制权，用60年时间跻身全球最富裕国家之列。",
@@ -3334,6 +3352,7 @@ export const countries: CountryData[] = [
     nameEn: "North Korea",
     capital: "平壤",
     region: "亚洲",
+    subRegion: "东亚",
     coordinates: [127.5101, 40.3399],
     coverImage: "https://images.unsplash.com/photo-1604359896927-0610b7a3a2be?w=1200&q=80",
     summary: "朝鲜是21世纪最难以观测的国家——一个将自我封闭转化为政权生存策略的地缘政治黑盒。理解朝鲜，首先要理解朝鲜半岛的地缘困境：它永远夹在中国、日本、俄罗斯和美国之间。",
@@ -3406,6 +3425,7 @@ export const countries: CountryData[] = [
     nameEn: "Kazakhstan",
     capital: "阿斯塔纳",
     region: "亚洲",
+    subRegion: "中亚",
     coordinates: [66.9237, 48.0196],
     coverImage: "https://images.unsplash.com/photo-1637842729600-d256c8960194?w=1200&q=80",
     summary: "哈萨克斯坦是世界上最大的内陆国——面积相当于西欧总和，却被锁在欧亚大陆腹地，四面不见海洋。这片辽阔的草原是古丝绸之路的核心通道，也是今天能源地缘政治的新棋局。",
@@ -3482,6 +3502,7 @@ export const countries: CountryData[] = [
     nameEn: "Afghanistan",
     capital: "喀布尔",
     region: "亚洲",
+    subRegion: "南亚",
     coordinates: [67.7100, 33.9391],
     coverImage: "https://images.unsplash.com/photo-1675946369097-1ddf6b12bed3?w=1200&q=80",
     summary: "阿富汗被称为「帝国的坟场」——亚历山大大帝、英国、苏联、美国，每一个试图征服这片土地的帝国都铩羽而归。地理是原因：兴都库什山脉把阿富汗变成了世界上最难征服也最难治理的地方之一。",
@@ -3630,6 +3651,7 @@ export const countries: CountryData[] = [
     nameEn: "Myanmar",
     capital: "内比都",
     region: "亚洲",
+    subRegion: "东南亚",
     coordinates: [95.9560, 16.8661],
     coverImage: "https://images.unsplash.com/photo-1566811850669-887f44a89c68?w=1200&q=80",
     summary: "缅甸是中国和印度之间最重要的战略缓冲——两个亚洲巨人都在争夺通往印度洋的出口，而缅甸恰好是那扇门。从蒲甘的万塔之城到伊洛瓦底江的黄金水道，再到若开邦的天然气，缅甸的地理价值从来不由缅甸人自己决定。",
@@ -4176,6 +4198,7 @@ export const countries: CountryData[] = [
     nameEn: "Taiwan",
     capital: "台北",
     region: "亚洲",
+    subRegion: "东亚",
     coordinates: [120.9605, 23.6978],
     coverImage: "https://images.unsplash.com/photo-1470004914212-05527e49370b?w=1200&q=80",
     summary: "台湾海峡的地缘博弈，孕育出全球最重要的半导体产业与东亚最尖锐的地缘冲突热点；这座岛屿的命运牵动着美中关系与全球供应链的走向。",
@@ -4240,6 +4263,7 @@ export const countries: CountryData[] = [
     nameEn: "UAE",
     capital: "阿布扎比",
     region: "亚洲",
+    subRegion: "西亚",
     coordinates: [53.8478, 23.4241],
     coverImage: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&q=80",
     summary: "从贝都因沙漠到全球最密集的摩天楼群，阿联酋用半个世纪将石油美元转化为现代城市奇观与全球交通枢纽，迪拜是21世纪全球化最极端的实验场。",
@@ -4303,8 +4327,9 @@ export const countries: CountryData[] = [
     nameEn: "Bangladesh",
     capital: "达卡",
     region: "亚洲",
+    subRegion: "南亚",
     coordinates: [90.3563, 23.6850],
-    coverImage: "https://images.unsplash.com/photo-1601637001727-91ac0ec93283?w=1200&q=80",
+    coverImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Save_the_sundarbans_20.jpg/1280px-Save_the_sundarbans_20.jpg",
     summary: "世界上人口密度最高的大国之一，坐落在恒河—布拉马普特拉河三角洲上；孟加拉国的历史是洪水与韧性的史诗，也是全球气候变化最直接的受害者写照。",
     geography: "孟加拉国面积约14.8万平方公里，国土约80%位于世界最大的三角洲——恒河-布拉马普特拉-梅克纳河三角洲（孙德尔本斯三角洲）上。地势极低平，平均海拔不足10米，大部分地区海拔在2米以下。每年季风季节约有三分之一的国土被洪水淹没；沿海的孙德尔本斯红树林（世界最大红树林，约6000平方公里）是孟加拉湾气旋的天然缓冲带，也是孟加拉虎的最后家园之一。",
     impactChain: {
@@ -4431,7 +4456,7 @@ export const countries: CountryData[] = [
     capital: "布加勒斯特",
     region: "欧洲",
     coordinates: [24.9668, 45.9432],
-    coverImage: "https://images.unsplash.com/photo-1534481016308-0fec0ada8e58?w=1200&q=80",
+    coverImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Castelul_Bran2.jpg/1280px-Castelul_Bran2.jpg",
     summary: "特兰西瓦尼亚的城堡、多瑙河三角洲的芦苇荡、喀尔巴阡山的野狼——罗马尼亚是东欧面积最大的国家之一，也是欧盟腐败问题最突出、转型阵痛最深刻的成员国之一。",
     geography: "罗马尼亚面积约23.8万平方公里，是东南欧（巴尔干）最大国家，与乌克兰、摩尔多瓦、保加利亚、塞尔维亚、匈牙利接壤，东临黑海。地形以喀尔巴阡山脉（呈弧形横贯中部，最高峰摩尔多夫亚努峰2544m）为核心，山脉内侧是特兰西瓦尼亚高原（Transylvania，平均约500m），山脉外侧是瓦拉几亚（Wallachia）平原（南）和摩尔达维亚（Moldova）丘陵（东）。多瑙河沿南部和东南部边界流行约1075公里后注入黑海，形成欧洲最大、保存最完整的三角洲（多瑙河三角洲，约5765平方公里，UNESCO世界遗产）。",
     impactChain: {
@@ -4494,8 +4519,9 @@ export const countries: CountryData[] = [
     nameEn: "Jordan",
     capital: "安曼",
     region: "亚洲",
+    subRegion: "西亚",
     coordinates: [36.2384, 30.5852],
-    coverImage: "https://images.unsplash.com/photo-1579793052936-c7a3e5e3c9c7?w=1200&q=80",
+    coverImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Al_Deir_Petra.JPG/1280px-Al_Deir_Petra.JPG",
     summary: "佩特拉的玫瑰红城、瓦迪拉姆的火星地貌——约旦以不足1000万人口在中东最动荡的地带维持着独特的稳定，哈希姆王朝的外交平衡术是这个沙漠王国最珍贵的生存艺术。",
     geography: "约旦面积约8.9万平方公里，位于中东核心，西临死海和约旦河谷，与以色列和巴勒斯坦接壤，北接叙利亚，东连伊拉克，南邻沙特阿拉伯，西南角有约26公里的红海海岸线（亚喀巴湾）。地形以约旦高原（西部，海拔约700-1700m）和东部阿拉伯沙漠（约占国土75%）为主，约旦河谷和死海（海面以下约430m，世界最低陆地）构成西部独特的低地地貌。约旦90%以上领土年降水不足200毫米，是全球水资源最匮乏的国家之一。",
     impactChain: {
@@ -4692,7 +4718,7 @@ export const countries: CountryData[] = [
     capital: "阿尔及尔",
     region: "非洲",
     coordinates: [1.6596, 28.0339],
-    coverImage: "https://images.unsplash.com/photo-1539437829697-1b4ed5b6f5fa?w=1200&q=80",
+    coverImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/AlgerCasbah.jpg/1280px-AlgerCasbah.jpg",
     summary: "非洲最大国家，撒哈拉沙漠占其国土约85%；阿尔及利亚用天然气财富支撑着对内的稳定与对外的独立外交，却始终未能实现石油之外的经济突破。",
     geography: "阿尔及利亚面积约238.2万平方公里，是非洲最大的国家（2011年苏丹分裂后），也是世界第十大国。北部地中海沿岸是肥沃的特尔高原和阿特拉斯山脉（最高峰塔哈特山2908m），占国土面积约12%，却集中了约90%的人口。南部是撒哈拉大沙漠，面积约200万平方公里，包含大型沙丘（厄尔格）、砾漠（雷格）和玄武岩高原（哈马达），以及阿哈加尔山脉（2918m）等孤立山地。北部沿海受地中海气候滋润，南部撒哈拉年降水不足25毫米。",
     impactChain: {
@@ -4759,7 +4785,7 @@ export const countries: CountryData[] = [
     capital: "哈瓦那",
     region: "北美洲",
     coordinates: [-79.5167, 21.5218],
-    coverImage: "https://images.unsplash.com/photo-1519563883498-7b3bf52f5393?w=1200&q=80",
+    coverImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/DJI_0197_crp_wiki.jpg/1280px-DJI_0197_crp_wiki.jpg",
     summary: "加勒比最大岛国，冷战历史的活化石；古巴革命60年后仍坚守社会主义，哈瓦那的老爷车与雪茄在诉说着一个被时间冻结的国家如何在美国制裁下挣扎求存。",
     geography: "古巴是加勒比海最大岛屿，面积约10.99万平方公里，东西绵延约1200公里，形似一根雪茄。北临佛罗里达海峡（与美国佛罗里达州最近处约180公里），南濒加勒比海，东靠伊斯帕尼奥拉岛（海地和多米尼加共和国）。地形以平原和滚动丘陵为主（约三分之二），东部马埃斯特拉山脉最高峰皮科图尔基诺（1974m）是古巴革命的摇篮地带。热带湿润气候，年均气温约26°C，是理想的甘蔗和烟草种植区。",
     impactChain: {
@@ -4822,7 +4848,7 @@ export const countries: CountryData[] = [
     capital: "阿克拉",
     region: "非洲",
     coordinates: [-1.0232, 7.9465],
-    coverImage: "https://images.unsplash.com/photo-1561541178-9fa00d28d2a9?w=1200&q=80",
+    coverImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Cape_Coast_Castle%2C_Cape_Coast%2C_Ghana.JPG/1280px-Cape_Coast_Castle%2C_Cape_Coast%2C_Ghana.JPG",
     summary: "非洲独立运动的先行者，加纳以「黄金海岸」的可可与黄金书写着西非民主发展的样本故事，但债务危机与可可价格波动始终考验着这个国家的韧性。",
     geography: "加纳面积约23.9万平方公里，位于西非几内亚湾北岸，南临大西洋，北部为萨赫勒-萨瓦纳过渡带。地形以低平为主，平均海拔约190米，西北部阿坎地带有少量丘陵（最高点阿福吉亚托峰885m）。沃尔特河（White Volta和Black Volta汇合）纵贯全境，在南部形成全球最大人工湖之一的沃尔特湖（面积约8502平方公里，1964年阿科松博大坝建成后形成）。南部沿海为高温潮湿的热带雨林区，北部转为干燥的热带稀树草原。",
     impactChain: {
@@ -5018,8 +5044,9 @@ export const countries: CountryData[] = [
     nameEn: "Qatar",
     capital: "多哈",
     region: "亚洲",
+    subRegion: "西亚",
     coordinates: [51.1839, 25.3548],
-    coverImage: "https://images.unsplash.com/photo-1512030400317-3cb37a3d0cc5?w=1200&q=80",
+    coverImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/The_Pearl_Marina_in_Nov_2013.jpg/1280px-The_Pearl_Marina_in_Nov_2013.jpg",
     summary: "世界上人均最富裕的国家之一，卡塔尔用液化天然气财富重塑了自身的全球形象，从默默无闻的波斯湾小国跃升为中东外交调停者与2022年世界杯的东道主。",
     geography: "卡塔尔是伸入波斯湾的半岛，面积约1.15万平方公里（与中国上海市相当），是全球面积最小的主权国家之一。地势低平，以沙质沙漠为主，最高点约103米，海岸线约563公里。北部萨尔半岛曾是传统渔村，南部较为干燥。卡塔尔与伊朗共享北方气田（North Dome，伊朗称South Pars），这一气田是全球已探明最大的天然气田，卡塔尔一侧储量约25万亿立方米，使其人均天然气储量在全球无可匹敌。",
     impactChain: {
@@ -5080,7 +5107,7 @@ export const countries: CountryData[] = [
     capital: "达喀尔",
     region: "非洲",
     coordinates: [-14.4524, 14.4974],
-    coverImage: "https://images.unsplash.com/photo-1608198399988-82a40f4b63c0?w=1200&q=80",
+    coverImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Monument_renaissance.jpg/1280px-Monument_renaissance.jpg",
     summary: "西非最稳定的民主国家，坐落在非洲大陆最西端的达喀尔是非洲通往大西洋的门户；塞内加尔以苏非兄弟会的精神凝聚力、足球外交与文化软实力书写着西非的另一种可能性。",
     geography: "塞内加尔面积约19.7万平方公里，位于非洲大陆最西端，三面被冈比亚、几内亚比绍、几内亚、马里、毛里塔尼亚包围，西临大西洋（海岸线约531公里）。地形低平，以萨赫勒-萨瓦纳过渡带为主，北部是半干旱萨赫勒带，南部卡萨芒斯地区相对湿润（年降水约1200毫米），中部是花生带（Peanut Basin）。最重要的地貌特征是大西洋沿岸的佛得角半岛，达喀尔建于此，是非洲大陆最西端的城市，也是连接非洲与欧洲、美洲的传统航运节点。",
     impactChain: {
@@ -5144,6 +5171,7 @@ export const countries: CountryData[] = [
     nameEn: "Sri Lanka",
     capital: "科伦坡",
     region: "亚洲",
+    subRegion: "南亚",
     coordinates: [80.7718, 7.8731],
     coverImage: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1200&q=80",
     summary: "印度洋的明珠，古称锡兰；2022年斯里兰卡遭遇独立以来最严重的经济崩溃，这个曾经自豪于识字率和医疗体系的南亚国家，向世界展示了治理失败的代价。",
@@ -5208,6 +5236,7 @@ export const countries: CountryData[] = [
     nameEn: "Uzbekistan",
     capital: "塔什干",
     region: "亚洲",
+    subRegion: "中亚",
     coordinates: [63.9528, 41.3775],
     coverImage: "https://images.unsplash.com/photo-1590559899731-a382839e5549?w=1200&q=80",
     summary: "撒马尔罕和布哈拉的蓝色穹顶矗立千年，见证了中亚最辉煌的文明；乌兹别克斯坦是中亚人口最多的国家，今日以资源与地理位置重返丝绸之路核心节点。",
@@ -5277,7 +5306,7 @@ export const countries: CountryData[] = [
     capital: "苏克雷",
     region: "南美洲",
     coordinates: [-64.9631, -16.2902],
-    coverImage: "https://images.unsplash.com/photo-1537534274669-b5dcc40ddc3c?w=1200&q=80",
+    coverImage: "https://upload.wikimedia.org/wikipedia/commons/4/4a/Salar_Uyuni_au01.jpg",
     summary: "世界最高首都、最大盐沼、最丰富的锂储量——玻利维亚的地理是南美洲最极端的集合，也是这个内陆国家命运最深刻的塑造者，从殖民时代的银矿到21世纪的锂矿，资源左右着一切。",
     geography: "玻利维亚面积约109.9万平方公里，是南美洲第五大国，完全内陆（1879年太平洋战争后失去出海口）。地形分三大区：西部安第斯高原（阿尔蒂普拉诺，海拔约3500-4000m，面积约10万平方公里），是世界上最广阔的热带高原；中部亚安第斯山谷（约1000-3000m，温带气候，重要农业区）；东部低地（亚马逊和查科盆地，热带和亚热带气候，面积约占国土70%）。的的喀喀湖（Titicaca Lake，海拔3812m，世界最高可通航湖泊，面积约8400平方公里）位于玻利维亚与秘鲁边界。乌尤尼盐沼（Salar de Uyuni，约10582平方公里）是世界最大盐沼，也是全球最大锂资源区之一。",
     impactChain: {
@@ -5348,7 +5377,7 @@ export const countries: CountryData[] = [
     capital: "明斯克",
     region: "欧洲",
     coordinates: [27.9534, 53.7098],
-    coverImage: "https://images.unsplash.com/photo-1582610116397-edb72278f1ef?w=1200&q=80",
+    coverImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81_%D0%9C%D0%B8%D1%80%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%B7%D0%B0%D0%BC%D0%BA%D0%B0.JPG/1280px-%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81_%D0%9C%D0%B8%D1%80%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%B7%D0%B0%D0%BC%D0%BA%D0%B0.JPG",
     summary: "欧洲最后的独裁者卢卡申科统治三十年，白俄罗斯被称为「欧洲最后的独裁国家」，2020年大选舞弊引发的民主抗议浪潮改变了欧洲版图，最终将其更深地推入俄罗斯怀抱。",
     geography: "白俄罗斯面积约20.8万平方公里，是欧洲最大的内陆国之一，与俄罗斯、乌克兰、波兰、立陶宛、拉脱维亚接壤。地形极为平坦，平均海拔约160米，最高点迪兹辛纳山仅346米。普里皮亚季河流域是欧洲最大的湿地和泥炭沼泽区（普里皮亚季沼泽，约约400万公顷），是欧洲的「绿肺」和重要的候鸟栖息地，比亚沃维耶扎（Białowieża/Belavezhskaya Pushcha，与波兰共享）原始森林是欧洲最后的低地原始森林，欧洲野牛在此得以保存。位于欧洲平原走廊，历史上是东西军队的必经之路。",
     impactChain: {

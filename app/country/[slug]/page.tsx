@@ -139,6 +139,154 @@ export default async function CountryPage({
           </div>
         </div>
 
+        {/* Key Landmarks */}
+        {country.keyLandmarks && (
+          <div className="mt-16">
+            <div className="flex items-center gap-3 mb-8">
+              <div className="h-px flex-1 bg-[#1e3a5c]" />
+              <h2 className="text-xs text-amber-400 uppercase tracking-widest font-medium whitespace-nowrap">
+                命名地理特征
+              </h2>
+              <div className="h-px flex-1 bg-[#1e3a5c]" />
+            </div>
+            <div className="grid sm:grid-cols-2 gap-4">
+              {[
+                { icon: "⛰", label: "山脉 / 峰", items: country.keyLandmarks.mountains },
+                { icon: "🌊", label: "河流", items: country.keyLandmarks.rivers },
+                { icon: "💧", label: "湖泊", items: country.keyLandmarks.lakes },
+                { icon: "🌾", label: "平原", items: country.keyLandmarks.plains },
+                { icon: "🏜", label: "沙漠", items: country.keyLandmarks.deserts },
+              ]
+                .filter((cat) => cat.items && cat.items.length > 0)
+                .map(({ icon, label, items }) => (
+                  <div
+                    key={label}
+                    className="bg-[#0d1a2d] rounded-xl p-4 border border-[#1e3a5c]"
+                  >
+                    <p className="text-xs text-[#4a6fa5] uppercase tracking-wide mb-3">
+                      {icon} {label}
+                    </p>
+                    <ul className="space-y-2">
+                      {items!.map((item) => (
+                        <li key={item.name}>
+                          <span className="text-sm font-medium text-[#d0e0f0]">{item.name}</span>
+                          {item.detail && (
+                            <span className="text-xs text-[#6b8cba] ml-2">{item.detail}</span>
+                          )}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+            </div>
+          </div>
+        )}
+
+        {/* Natural Resources */}
+        {country.naturalResources && (
+          <div className="mt-16">
+            <div className="flex items-center gap-3 mb-8">
+              <div className="h-px flex-1 bg-[#1e3a5c]" />
+              <h2 className="text-xs text-amber-400 uppercase tracking-widest font-medium whitespace-nowrap">
+                自然资源
+              </h2>
+              <div className="h-px flex-1 bg-[#1e3a5c]" />
+            </div>
+            <div className="space-y-4">
+              {[
+                { label: "能源矿产", items: country.naturalResources.energy },
+                { label: "金属矿产", items: country.naturalResources.minerals },
+                { label: "生物资源", items: country.naturalResources.biological },
+              ]
+                .filter((cat) => cat.items && cat.items.length > 0)
+                .map(({ label, items }) => (
+                  <div key={label} className="flex gap-3 flex-wrap items-start">
+                    <span className="text-xs text-[#4a6fa5] uppercase tracking-wide w-20 pt-1 shrink-0">
+                      {label}
+                    </span>
+                    <div className="flex flex-wrap gap-2">
+                      {items!.map((item) => (
+                        <span
+                          key={item}
+                          className="px-3 py-1 text-xs text-[#8aaed4] border border-[#1e3a5c] rounded-full bg-[#0d1a2d]"
+                        >
+                          {item}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              {country.naturalResources.water && (
+                <div className="flex gap-3 items-start">
+                  <span className="text-xs text-[#4a6fa5] uppercase tracking-wide w-20 pt-1 shrink-0">
+                    水资源
+                  </span>
+                  <p className="text-sm text-[#8aaed4] leading-relaxed flex-1">
+                    {country.naturalResources.water}
+                  </p>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+
+        {/* Geopolitics */}
+        {country.geopolitics && (
+          <div className="mt-16">
+            <div className="flex items-center gap-3 mb-8">
+              <div className="h-px flex-1 bg-[#1e3a5c]" />
+              <h2 className="text-xs text-amber-400 uppercase tracking-widest font-medium whitespace-nowrap">
+                邻国与地缘
+              </h2>
+              <div className="h-px flex-1 bg-[#1e3a5c]" />
+            </div>
+            <div className="space-y-5">
+              <div>
+                <p className="text-xs text-[#4a6fa5] uppercase tracking-wide mb-2">陆地邻国</p>
+                <div className="flex flex-wrap gap-2">
+                  {country.geopolitics.neighbors.map((n) => (
+                    <span
+                      key={n}
+                      className="px-3 py-1 text-xs text-[#8aaed4] border border-[#1e3a5c] rounded-full bg-[#0d1a2d]"
+                    >
+                      {n}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              {country.geopolitics.seaNeighbors && country.geopolitics.seaNeighbors.length > 0 && (
+                <div>
+                  <p className="text-xs text-[#4a6fa5] uppercase tracking-wide mb-2">海上邻国</p>
+                  <div className="flex flex-wrap gap-2">
+                    {country.geopolitics.seaNeighbors.map((n) => (
+                      <span
+                        key={n}
+                        className="px-3 py-1 text-xs text-[#8aaed4] border border-[#1e3a5c]/60 rounded-full bg-[#0d1a2d]"
+                      >
+                        {n}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+              <div className="bg-[#0d1a2d] rounded-xl p-4 border border-[#1e3a5c]">
+                <p className="text-xs text-[#4a6fa5] uppercase tracking-wide mb-2">战略地位</p>
+                <p className="text-sm text-[#d0e0f0] leading-relaxed">
+                  {country.geopolitics.strategicPosition}
+                </p>
+              </div>
+              {country.geopolitics.borderDisputes && (
+                <div className="bg-[#0d1a2d] rounded-xl p-4 border border-[#1e3a5c]">
+                  <p className="text-xs text-[#4a6fa5] uppercase tracking-wide mb-2">领土争议</p>
+                  <p className="text-sm text-[#8aaed4] leading-relaxed">
+                    {country.geopolitics.borderDisputes}
+                  </p>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+
         {/* Related topics */}
         {relatedTopics.length > 0 && (
           <div className="mt-16">

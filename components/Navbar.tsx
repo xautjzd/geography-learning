@@ -10,7 +10,7 @@ export default function Navbar() {
       <div className="flex items-center gap-6 text-sm text-[#6b8cba]">
         <Link href="/" className="hover:text-amber-400 transition-colors">地图</Link>
         <Link href="/topics" className="hover:text-amber-400 transition-colors">专题</Link>
-        <Link href="/countries" className="hover:text-amber-400 transition-colors">国家</Link>
+        <Link href="/countries" className="hover:text-amber-400 transition-colors">国家与地区</Link>
       </div>
     </nav>
   );

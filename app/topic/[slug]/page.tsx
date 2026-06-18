@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import ReactMarkdown from "react-markdown";
 import { topics, getTopicBySlug } from "@/data/topics";
 import { getCountryBySlug } from "@/data/countries";
 import type { Metadata } from "next";
@@ -35,8 +36,6 @@ export default async function TopicPage({
   const affectedCountries = topic.affectedCountries
     .map((s) => getCountryBySlug(s))
     .filter(Boolean);
-
-  const contentParagraphs = topic.content.split("\n\n");
 
   return (
     <article className="min-h-screen pt-[60px]">
@@ -107,22 +106,45 @@ export default async function TopicPage({
             </span>
             <div className="h-px flex-1 bg-[#1e3a5c]" />
           </div>
-          <div className="space-y-6 text-[#8aaed4] leading-8">
-            {contentParagraphs.map((para, i) => {
-              if (para.startsWith("## ")) {
-                return (
-                  <h2 key={i} className="text-xl font-bold text-white mt-10 mb-4">
-                    {para.replace("## ", "")}
-                  </h2>
-                );
-              }
-              return (
-                <p key={i} className="text-base leading-8">
-                  {para}
-                </p>
-              );
-            })}
-          </div>
+          <ReactMarkdown
+            components={{
+              h2: ({ children }) => (
+                <h2 className="text-xl font-bold text-white mt-10 mb-4">{children}</h2>
+              ),
+              h3: ({ children }) => (
+                <h3 className="text-lg font-semibold text-[#b8c9e0] mt-6 mb-3">{children}</h3>
+              ),
+              p: ({ children }) => (
+                <p className="text-base text-[#8aaed4] leading-8 mb-4">{children}</p>
+              ),
+              strong: ({ children }) => (
+                <strong className="text-[#c8d9ee] font-semibold">{children}</strong>
+              ),
+              em: ({ children }) => (
+                <em className="italic text-[#7a9ec4]">{children}</em>
+              ),
+              ul: ({ children }) => (
+                <ul className="list-disc list-inside space-y-2 my-4 text-[#8aaed4] marker:text-amber-400">
+                  {children}
+                </ul>
+              ),
+              ol: ({ children }) => (
+                <ol className="list-decimal list-inside space-y-2 my-4 text-[#8aaed4] marker:text-amber-400">
+                  {children}
+                </ol>
+              ),
+              li: ({ children }) => (
+                <li className="text-base leading-7 pl-1">{children}</li>
+              ),
+              blockquote: ({ children }) => (
+                <blockquote className="border-l-4 border-amber-400/60 pl-4 italic text-[#7a9ec4] my-4">
+                  {children}
+                </blockquote>
+              ),
+            }}
+          >
+            {topic.content}
+          </ReactMarkdown>
         </div>
 
         {/* Timeline */}
