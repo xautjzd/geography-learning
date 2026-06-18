@@ -99,12 +99,14 @@ interface WorldMapProps {
   countries: CountryData[];
   selectedSlug: string | null;
   onCountryClick: (country: CountryData) => void;
+  onDeselect?: () => void;
 }
 
 const WorldMap = memo(function WorldMap({
   countries,
   selectedSlug,
   onCountryClick,
+  onDeselect,
 }: WorldMapProps) {
   const [hoveredSlug, setHoveredSlug] = useState<string | null>(null);
 
@@ -122,7 +124,7 @@ const WorldMap = memo(function WorldMap({
   );
 
   return (
-    <div className="w-full h-full bg-[#0d1520]">
+    <div className="w-full h-full bg-[#0d1520]" onClick={onDeselect}>
       <ComposableMap
         projection="geoNaturalEarth1"
         style={{ width: "100%", height: "100%" }}
@@ -148,8 +150,9 @@ const WorldMap = memo(function WorldMap({
                       hover: { outline: "none" },
                       pressed: { outline: "none" },
                     }}
-                    onClick={() => {
+                    onClick={(e) => {
                       if (isAvailable && slug) {
+                        e.stopPropagation();
                         onCountryClick(countryMap[slug]);
                       }
                     }}

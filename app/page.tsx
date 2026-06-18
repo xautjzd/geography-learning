@@ -77,6 +77,7 @@ export default function HomePage() {
             countries={countries}
             selectedSlug={selectedCountry?.slug ?? null}
             onCountryClick={handleCountryClick}
+            onDeselect={handleClose}
           />
         </Suspense>
       </div>
