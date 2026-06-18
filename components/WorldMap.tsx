@@ -72,6 +72,16 @@ const countryCodeMap: Record<string, string> = {
   "246": "finland",
   "352": "iceland",
   "040": "austria",
+  // New 10 countries (third batch)
+  "760": "syria",
+  "591": "panama",
+  "422": "lebanon",
+  "887": "yemen",
+  "729": "sudan",
+  "116": "cambodia",
+  "348": "hungary",
+  "418": "laos",
+  "218": "ecuador",
   // New 20 countries
   "158": "taiwan",
   "784": "uae",

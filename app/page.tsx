@@ -5,6 +5,19 @@ import dynamic from "next/dynamic";
 import { CountryData } from "@/lib/types";
 import { countries } from "@/data/countries";
 import { topics } from "@/data/topics";
+
+const FEATURED_TOPIC_SLUGS = [
+  "global-chokepoints",
+  "oil-geopolitics",
+  "monsoon-asia",
+  "mediterranean",
+  "himalayas",
+  "silk-road",
+  "mekong-river",
+  "sahara",
+  "industrial-revolution",
+  "pacific-ring-of-fire",
+];
 import CountrySidebar from "@/components/CountrySidebar";
 import Link from "next/link";
 
@@ -51,17 +64,26 @@ export default function HomePage() {
       </div>
 
       {/* Topic shortcut */}
-      <div className="absolute bottom-8 right-6 z-10 flex flex-col gap-2 max-h-[calc(100vh-120px)] overflow-y-auto">
+      <div className="absolute bottom-8 right-6 z-10 flex flex-col gap-2">
         <p className="text-xs text-[#4a6fa5] mb-1">精选专题</p>
-        {topics.map((t) => (
-          <Link
-            key={t.slug}
-            href={`/topic/${t.slug}`}
-            className="text-xs px-3 py-1.5 bg-[#0d1a2d] border border-[#1e3a5c] rounded text-[#6b8cba] hover:text-amber-400 hover:border-amber-400/30 transition-colors whitespace-nowrap"
-          >
-            {t.title.split("：")[0]} →
-          </Link>
-        ))}
+        {topics
+          .filter((t) => FEATURED_TOPIC_SLUGS.includes(t.slug))
+          .sort((a, b) => FEATURED_TOPIC_SLUGS.indexOf(a.slug) - FEATURED_TOPIC_SLUGS.indexOf(b.slug))
+          .map((t) => (
+            <Link
+              key={t.slug}
+              href={`/topic/${t.slug}`}
+              className="text-xs px-3 py-1.5 bg-[#0d1a2d] border border-[#1e3a5c] rounded text-[#6b8cba] hover:text-amber-400 hover:border-amber-400/30 transition-colors whitespace-nowrap"
+            >
+              {t.title.split("：")[0]} →
+            </Link>
+          ))}
+        <Link
+          href="/topics"
+          className="text-xs px-3 py-1.5 mt-1 bg-[#0d1a2d] border border-[#1e3a5c]/50 rounded text-[#4a6fa5] hover:text-amber-400 hover:border-amber-400/30 transition-colors whitespace-nowrap text-center"
+        >
+          全部专题 ({topics.length}) →
+        </Link>
       </div>
 
       {/* Map */}
