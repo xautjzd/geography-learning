@@ -11,7 +11,7 @@ import { CountryData } from "@/lib/types";
 
 const GEO_URL = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
 
-// ISO numeric → slug mapping for our 38 countries
+// ISO numeric → slug mapping for all countries
 const countryCodeMap: Record<string, string> = {
   "156": "china",
   "392": "japan",
@@ -53,6 +53,46 @@ const countryCodeMap: Record<string, string> = {
   "231": "ethiopia",
   "180": "congo",
   "434": "libya",
+  "792": "turkey",
+  "586": "pakistan",
+  "804": "ukraine",
+  "566": "nigeria",
+  "620": "portugal",
+  "616": "poland",
+  "504": "morocco",
+  "702": "singapore",
+  "408": "north-korea",
+  "398": "kazakhstan",
+  "004": "afghanistan",
+  "404": "kenya",
+  "170": "colombia",
+  "752": "sweden",
+  "578": "norway",
+  "208": "denmark",
+  "246": "finland",
+  "352": "iceland",
+  "040": "austria",
+  // New 20 countries
+  "158": "taiwan",
+  "784": "uae",
+  "050": "bangladesh",
+  "056": "belgium",
+  "862": "venezuela",
+  "012": "algeria",
+  "192": "cuba",
+  "634": "qatar",
+  "288": "ghana",
+  "834": "tanzania",
+  "024": "angola",
+  "686": "senegal",
+  "144": "sri-lanka",
+  "860": "uzbekistan",
+  "068": "bolivia",
+  "112": "belarus",
+  "203": "czech-republic",
+  "642": "romania",
+  "400": "jordan",
+  "688": "serbia",
 };
 
 interface WorldMapProps {
@@ -86,7 +126,7 @@ const WorldMap = memo(function WorldMap({
       <ComposableMap
         projection="geoNaturalEarth1"
         style={{ width: "100%", height: "100%" }}
-        projectionConfig={{ scale: 165, center: [0, 15] }}
+        projectionConfig={{ scale: 147 }}
       >
         <ZoomableGroup>
           <Geographies geography={GEO_URL}>
