@@ -103,6 +103,19 @@ const countryCodeMap: Record<string, string> = {
   "642": "romania",
   "400": "jordan",
   "688": "serbia",
+  // Fifth batch (12 new countries)
+  "414": "kuwait",
+  "512": "oman",
+  "100": "bulgaria",
+  "031": "azerbaijan",
+  "191": "croatia",
+  "384": "ivory-coast",
+  "188": "costa-rica",
+  "788": "tunisia",
+  "800": "uganda",
+  "600": "paraguay",
+  "048": "bahrain",
+  "120": "cameroon",
 };
 
 interface WorldMapProps {
